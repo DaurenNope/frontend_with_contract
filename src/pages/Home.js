@@ -5,8 +5,13 @@ import NFTList from '../components/NFTList';
 import SearchBar from '../components/SearchBar';
 import Header from '../components/Header';
 import nft from '../components/nft';
+import { useNavigate } from 'react-router';
+
 
 function Home() {
+
+  const navigate = useNavigate();
+
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredNFTs, setFilteredNFTs] = useState(nft);
 
@@ -30,9 +35,13 @@ function Home() {
       <div style={{ display: 'flex', justifyContent: 'center', padding: "10px" }}>
         <Container fluid>
           <Col xs="auto" className="mb-4 justify-content-center">
-            <SearchBar searchTerm={searchTerm} onSearch={handleSearch} />
+            <SearchBar searchTerm={searchTerm} onSearch={handleSearch} onClick={()=>navigate("/details")} />
           </Col>
-          <NFTList nfts={filteredNFTs} renderItem={(nft) => <NFTCard nft={nft} />} itemsPerRow={4} />
+          <NFTList
+  nfts={filteredNFTs}
+  renderItem={(nft) => <NFTCard nft={nft} />}
+  itemsPerRow={4}
+/>
         </Container>
       </div>
     </>

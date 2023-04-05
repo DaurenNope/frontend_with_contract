@@ -1,15 +1,25 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-function NFTCard({ nft }) {
+function NFTCard({ nft, }) {
+
+  const navigate = useNavigate();
+
+  const handleDetailsClick = () => {
+    navigate(`/${nft.diplomaId}`);
+  };
+
   return (
-    <Card style={{ width: '20rem', margin: '10px' }}>
-      <Card.Img variant="top" src={nft.image} />
-      <Card.Body>
-      <Card.Text>Full Name: {nft.fullName}</Card.Text>
-        <Card.Subtitle className="mb-2 text-muted">{nft.major}</Card.Subtitle>
-        <Card.Text>Graduation Date: {nft.graduationDate}</Card.Text>
-        <Card.Text>Diploma ID: {nft.diplomaId}</Card.Text>
+    <Card style={{ width: '17rem', margin: '10px', borderRadius: '20px', padding:'5px' }}>
+      <Card.Img variant="top" src={nft.image} style={{ borderRadius: '20px', padding:'3px', height:'200px'}} />
+      <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+        <Card.Text> {nft.fullName}</Card.Text>
+        <Button variant="primary" onClick={handleDetailsClick}>Показать детали</Button>
+        <div className="text-center" style={{ marginTop: '10px' }}>
+          <div style={{ display: 'inline-block', position: 'relative' }}>
+          </div>
+        </div>
       </Card.Body>
     </Card>
   );

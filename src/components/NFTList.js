@@ -1,7 +1,4 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import NFTCard from './NFTCard';
-import nft from '../components/nft';
 
 function NFTList({ nfts, renderItem, itemsPerRow }) {
   const groupedNFTs = nfts.reduce((rows, key, index) => {
