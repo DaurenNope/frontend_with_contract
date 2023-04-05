@@ -32,7 +32,7 @@ const NFTDetails = () => {
         <Row>
           <Col xs={12} md={6}>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              {/* <img src={selectedNFT.image} alt="Diploma" style={{ maxWidth: "100%", height: "auto", maxHeight: "500px" }} /> */}
+              <img src={selectedNFT.image} alt="Diploma" style={{ maxWidth: "100%", height: "auto", maxHeight: "500px" }} />
             </div>
           </Col>
           <Col xs={12} md={6}>
