@@ -1,5 +1,8 @@
 {
-  "homepage": "https://daurennope.github.io/frontend_with_contract",
+  "homepage": "https://DaurenNope.github.io/frontend_with_contract",
+  "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+
   "name": "react-narxoz-nft",
   "version": "0.1.0",
   "private": true,
@@ -43,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
