@@ -12,7 +12,7 @@ function NFTCard({ nft, }) {
 
   return (
     <Card style={{ width: '17rem', margin: '10px', borderRadius: '20px', padding:'5px' }}>
-      <Card.Img variant="top" src={nft.image} style={{ borderRadius: '20px', padding:'3px', height:'200px'}} />
+      {/* <Card.Img variant="top" src={nft.image} style={{ borderRadius: '20px', padding:'3px', height:'200px'}} /> */}
       <Card.Body className="d-flex flex-column justify-content-center align-items-center">
         <Card.Text> {nft.fullName}</Card.Text>
         <Button variant="primary" onClick={handleDetailsClick}>Показать детали</Button>
