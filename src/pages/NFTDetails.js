@@ -31,6 +31,9 @@ const NFTDetails = () => {
       <Container className="my-4 d-flex justify-content-center">
         <Row>
           <Col xs={12} md={6}>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              {/* <img src={selectedNFT.image} alt="Diploma" style={{ maxWidth: "100%", height: "auto", maxHeight: "500px" }} />
+            </div>
           </Col>
           <Col xs={12} md={6}>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -41,7 +44,7 @@ const NFTDetails = () => {
               <h3> {selectedNFT.LatinHonors}</h3>
               <h3>ВУЗ Вручения(И Год вручения): {selectedNFT.commencementDate}</h3>
               <h3>ВУЗ Поступления (И Год поступления): {selectedNFT.admissionDate}</h3>
-              <h3>Дата Окончания: {selectedNFT.graduationDate}</h3>
+              <h3>Дата Окончания: {selectedNFT.graduationDate}</h3> */}
 
 
 
