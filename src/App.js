@@ -8,8 +8,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route exact path="/:id" element={<Home />} />
-          <Route exact path="/:id" element={<NFTDetails />} />
+          <Route exact path="/frontend_with_contract" element={<Home />} />
+          <Route exact path="/frontend_with_contract/:id" element={<NFTDetails />} />
         </Routes>
       </Router>
     </>

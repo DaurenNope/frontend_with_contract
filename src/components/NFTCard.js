@@ -7,7 +7,7 @@ function NFTCard({ nft, }) {
   const navigate = useNavigate();
 
   const handleDetailsClick = () => {
-    navigate(`/${nft.diplomaId}`);
+    navigate(`/frontend_with_contract/${nft.diplomaId}`);
   };
 
   return (
