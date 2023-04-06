@@ -1,4 +1,5 @@
 {
+  "homepage": "https://DaurenNope.github.io/frontend_with_contract",
   "name": "frontend_with_contract",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +20,7 @@
     "react-share": "^4.4.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://DaurenNope.github.io/frontend_with_contract",
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
