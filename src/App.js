@@ -8,7 +8,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/:id" element={<Home />} />
           <Route exact path="/:id" element={<NFTDetails />} />
         </Routes>
       </Router>
