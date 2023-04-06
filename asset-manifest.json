@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/frontend_with_contract/static/js/main.f0c0d005.js",
+    "main.js": "/frontend_with_contract/static/js/main.d3186190.js",
     "index.html": "/frontend_with_contract/index.html",
-    "main.f0c0d005.js.map": "/frontend_with_contract/static/js/main.f0c0d005.js.map"
+    "main.d3186190.js.map": "/frontend_with_contract/static/js/main.d3186190.js.map"
   },
   "entrypoints": [
-    "static/js/main.f0c0d005.js"
+    "static/js/main.d3186190.js"
   ]
 }
